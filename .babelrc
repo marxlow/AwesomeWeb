@@ -6,6 +6,9 @@
     ["module-resolver", {
       "root": ["."],
       "alias": {
+        "components": "./src/components",
+        "pages": "./src/pages",
+        "services": "./src/services",
         "constants": "./src/constants",
         "utils": "./src/utils",
         "__tests__": "./__tests__",
@@ -14,5 +17,6 @@
       },
       "cwd": "babelrc"
     }]
-  ]
+  ],
+  "ignore": []
 }
