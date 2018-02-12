@@ -1,3 +1,4 @@
+//@flow
 import React from 'react';
 import Button from '../Button/Button';
 import isSearched from '../../utils/isSearched';
@@ -8,7 +9,7 @@ const Table = ({ list, pattern, onDismiss }) => {
         <div className="table">
             {list.filter(isSearched(pattern)).map(item => {
                 return (
-                    <div key={item.objetID} className="table-row">
+                    <div key={item.objectID} className="table-row">
                         <span style={{ width: "40%" }}>
                             <a href={item.url}>{item.title}</a>
                         </span>

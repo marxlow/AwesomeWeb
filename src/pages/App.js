@@ -1,8 +1,11 @@
+//@flow
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Search from '../components/Search/Search';
 import Table from '../components/Table/Table';
+import GraphTable from '../components/Table/GraphTable';
+import moment from 'moment-timezone';
 
 const list = [
   {
@@ -19,7 +22,18 @@ const list = [
     num_comments: 2,
     points: 5,
     objectID: 1,
-  },];
+  },
+];
+
+const sampleData = [
+  { price: 100, timestamp: moment().subtract(1, 'day') }, // Most recent
+  { price: 90, timestamp: moment().subtract(2, 'day') },
+  { price: 80, timestamp: moment().subtract(3, 'day') },
+  { price: 70, timestamp: moment().subtract(4, 'day') },
+];
+
+const sampleDataArr = [ sampleData, sampleData, sampleData, sampleData, sampleData  ];
+
 
 class App extends Component {
 
@@ -60,6 +74,9 @@ class App extends Component {
           list={list}
           pattern={searchTerm}
           onDismiss={this.onDismiss}
+        />
+        <GraphTable
+          marketDatas={sampleDataArr}
         />
       </div>
     );
