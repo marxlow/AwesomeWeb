@@ -1,7 +1,5 @@
-import path from 'path';
-
 module.exports = {
-  entry: path.resolve(__dirname, '/src/index.js'),
+  entry: `${__dirname}/src/index.js`,
   output: {
     filename: './build/awesomeweb.bundle.js'
   },

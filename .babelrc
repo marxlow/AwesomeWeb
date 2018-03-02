@@ -6,8 +6,8 @@
     ["module-resolver", {
       "root": ["."],
       "alias": {
-        "components": "./src/components",
         "pages": "./src/pages",
+        "components": "./src/components",
         "services": "./src/services",
         "constants": "./src/constants",
         "utils": "./src/utils",
