@@ -1,5 +1,5 @@
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 import App from './pages/App';
 import React from 'react';

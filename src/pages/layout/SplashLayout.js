@@ -10,9 +10,10 @@ class SplashLayout extends Component {
 
     render() {
         return (
-            <div>
+            <div className="bg-gradient-info">
                 <header>
                     <p> Header for Splash </p>
+                    <button type="button" className="btn btn-primary">Primary</button>
                 </header>
                 <div>
                 </div>
