@@ -33,3 +33,40 @@ button:hover {
 *:focus {
   outline: none;
 }
+
+/* LAYOUT CSS */
+
+.splash-layout {
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CARDS CSS */
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 24rem
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+}
+
+.profile-title {
+  font-weight: bold;
+  font-size: medium;
+  color: black;
+}
+
+.profile-description {
+  font-size: small;
+  color:blacl
+}
