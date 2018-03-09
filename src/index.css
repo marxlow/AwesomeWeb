@@ -37,6 +37,8 @@ button:hover {
 /* LAYOUT CSS */
 
 .splash-layout {
+  background-image: url('./images/small_splash.jpg');
+  background-size: cover;
   background-color: azure;
   display: flex;
   justify-content: center;
