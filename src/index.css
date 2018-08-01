@@ -37,7 +37,6 @@ button:hover {
 /* LAYOUT CSS */
 
 .splash-layout {
-  background-image: url('./images/small_splash.jpg');
   background-size: cover;
   background-color: azure;
   display: flex;
@@ -47,14 +46,6 @@ button:hover {
 }
 
 /* CARDS CSS */
-.profile-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-  width: 24rem
-}
 
 .profile-img {
   border-radius: 50%;
@@ -70,5 +61,20 @@ button:hover {
 
 .profile-description {
   font-size: small;
-  color:blacl
+  color:black;
+}
+
+.skill-img {
+  padding-top: 1.25rem;
+  height: 10em;
+  width: 10em;
+  object-fit: scale-down;
+}
+/* BACKGROUND COLOR CSS */
+
+.bg-brand-primary { 
+  background: linear-gradient(to right, #a2caf580, #ffffff);
+}
+.bg-brand-secondary {
+  background-color: #a2caf580;
 }

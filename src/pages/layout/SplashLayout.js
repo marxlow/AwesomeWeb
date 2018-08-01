@@ -1,10 +1,14 @@
 // @flow
-
-import { Link, Route } from 'react-router';
 import React, { Component } from 'react';
-
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import 'antd/dist/antd.css';
+import Navbar from '../../components/shared/Navbar';
 import IntroCard from '../../components/Cards/IntroCard';
-import ProfileImg from '../../images/upstate_headshot.jpg';
+import DomainCard from '../../components/Cards/DomainCard';
+// import { Carousel } from 'antd';
+import { DOMAINS } from '../../constants';
 
 class SplashLayout extends Component {
   constructor(props) {
@@ -13,23 +17,43 @@ class SplashLayout extends Component {
   render() {
     const name = "Marx Low";
     const aboutMe = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis congue quam et sodales. Phasellus ac lacus sapien. Mauris venenatis.";
-    const socialMedia = [
-      { name: "FaceBook", url: "https://FacebookURL" },
-      { name: "Twitter", url: "https://TwitterURL" },
-      { name: "Instagram", url: "https://InstagramURL" },
-      { name: "Github", url: "https://GithubURL" },
-      { name: "LinkedIn", url: "https://linkedInURL" },
-    ]
-    const profileImg = "ProfileImg";
+    const profileImg = "profile_picture.jpg";
     return (
-      <div className="splash-layout">
-        <IntroCard
-          name={name}
-          aboutMe={aboutMe}
-          socialMedia={socialMedia}
-          profileImg={ProfileImg}
-        />
-      </div>
+      <div>
+        <section className="bg-brand-primary">
+          <div>
+            <Navbar name="M.L" />
+          </div>
+          <div className="col-12 pt-4">
+            <IntroCard
+              name={name}
+              aboutMe={aboutMe}
+              profileImg={profileImg}
+            />
+          </div>
+        </section>
+        <section>
+          <Slider
+            dots={true}
+            infinite={true}
+            autoplay={true}
+            dots={true}
+            speed={1000}
+            autoplaySpeed={5000}
+          >
+            {DOMAINS.map((domain, index) => {
+              return (
+                <DomainCard
+                  key={index}
+                  title={domain.title}
+                  backgroundImg={domain.backgroundImg}
+                  skills={domain.skills}
+                />
+              );
+            })}
+          </Slider>
+        </section>
+      </div >
     );
   }
 }
