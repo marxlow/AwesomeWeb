@@ -49,8 +49,8 @@ button:hover {
 
 .profile-img {
   border-radius: 50%;
-  width: 12rem;
-  height: 12rem;
+  width: 15rem;
+  height: 15rem;
 }
 
 .profile-title {
@@ -73,8 +73,14 @@ button:hover {
 /* BACKGROUND COLOR CSS */
 
 .bg-brand-primary { 
-  background: linear-gradient(to right, #a2caf580, #ffffff);
+  background: linear-gradient(to right, #02aab0, #00cdac);
 }
 .bg-brand-secondary {
-  background-color: #a2caf580;
+  background-color: #ebf3f5;
+}
+
+/* OVERWRITES */
+
+.slick-dots {
+  background-color: #ebf3f5;
 }

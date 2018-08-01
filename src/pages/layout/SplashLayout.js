@@ -7,7 +7,6 @@ import 'antd/dist/antd.css';
 import Navbar from '../../components/shared/Navbar';
 import IntroCard from '../../components/Cards/IntroCard';
 import DomainCard from '../../components/Cards/DomainCard';
-// import { Carousel } from 'antd';
 import { DOMAINS } from '../../constants';
 
 class SplashLayout extends Component {
@@ -32,12 +31,13 @@ class SplashLayout extends Component {
             />
           </div>
         </section>
-        <section>
+        <section className="bg-brand-secondary">
           <Slider
             dots={true}
             infinite={true}
             autoplay={true}
             dots={true}
+            pauseOnDotsHover={true}
             speed={1000}
             autoplaySpeed={5000}
           >
@@ -52,6 +52,9 @@ class SplashLayout extends Component {
               );
             })}
           </Slider>
+        </section>
+        <section className="bg-brand-secondary mt-4">
+          <span> Hello world </span>
         </section>
       </div >
     );
