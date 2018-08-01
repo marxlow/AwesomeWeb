@@ -31,15 +31,14 @@ class SplashLayout extends Component {
             />
           </div>
         </section>
-        <section className="bg-brand-secondary">
+        <section className="bg-brand-secondary pb-4">
           <Slider
-            dots={true}
             infinite={true}
-            autoplay={true}
+            autoplay={false}
             dots={true}
             pauseOnDotsHover={true}
             speed={1000}
-            autoplaySpeed={5000}
+            autoplaySpeed={3000}
           >
             {DOMAINS.map((domain, index) => {
               return (
@@ -53,12 +52,29 @@ class SplashLayout extends Component {
             })}
           </Slider>
         </section>
-        <section className="bg-brand-secondary mt-4">
-          <span> Hello world </span>
-        </section>
+        <section className="pt-4">
+          <div className="text-center">
+            <h2>Experience</h2>
+          </div>
+          <div className="d-flex flex-column align-items-center">
+            <div className="row col-10 col-md-8">
+              <div className="col-9">
+                <h1> Agolo</h1>
+                <ul>
+                  <li> Did something 1</li>
+                  <li> Did something again </li>
+                </ul>
+              </div>
+              <div className="col-3">
+                <h1> Agolo Logo</h1>
+              </div>
+            </div >
+          </div >
+        </section >
       </div >
     );
   }
 }
+
 
 export default SplashLayout;
