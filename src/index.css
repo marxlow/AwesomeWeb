@@ -53,8 +53,8 @@ button:hover {
 
 .profile-img {
   border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .profile-title {
@@ -70,8 +70,14 @@ button:hover {
 
 .skill-img {
   padding-top: 1.25rem;
-  height: 10em;
-  width: 10em;
+  height: 15em;
+  width: 15em;
+  object-fit: scale-down;
+}
+
+.project-img {
+  height: 15em;
+  width: 20em;
   object-fit: scale-down;
 }
 /* BACKGROUND COLOR CSS */
@@ -79,6 +85,7 @@ button:hover {
 .bg-brand-primary { 
   background: linear-gradient(to right, #43cea2, #185a9d);
 }
+
 .bg-brand-secondary {
   background-color: #ebf3f5;
 }
@@ -86,5 +93,5 @@ button:hover {
 /* OVERWRITES */
 
 .slick-dots {
-  background-color: #ebf3f5;
+  /* background-color: #ebf3f5; */
 }

@@ -4,9 +4,9 @@ const DomainCard = ({ title, backgroundImg, skills }) => {
   return (
     <div className="d-flex flex-column align-items-center pt-4 col-12">
       <section className="row text-center">
-        <h2>{title}</h2>
+        <h1>{title}</h1>
       </section>
-      <section className="row justify-content-around col-12 col-md-10">
+      <section className="row justify-content-center col-12 col-md-10">
         {skills.map((skill, index) => {
           return (
             <div className="card col-5 col-md-4 mt-2 mx-1 align-items-center" key={index}>

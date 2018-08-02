@@ -60,3 +60,21 @@ export const DOMAINS = [
   }
 ];
 
+
+export const PROJECTS = [
+  {
+    title: 'AI Tetris',
+    description: 'Used PSEA',
+    technology: 'Java',
+  },
+  {
+    title: 'Command Line Task Manager',
+    description: 'Worked in a team of 4 to create a Task manager in Java using revision control on GitHub for our final project',
+    technology: 'Java',
+  },
+  {
+    title: 'EmoHealth - Android App',
+    description: '',
+    technology: 'Java',
+  },
+]
